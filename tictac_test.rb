@@ -36,9 +36,15 @@ class TestTicTac < Minitest::Test
 		assert_equal(false, spot_open(board, position)) 
 	end 
 
-	# def test_plater
-	# 	assert_equal(player1, change_player(player))
-	
+
+	def test_player
+		assert_equal('x', change_player('o'))
+	end
+
+	def test_player
+		assert_equal('o', change_player('x'))
+	end
+
 end
 
 
