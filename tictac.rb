@@ -30,6 +30,18 @@ def change_player(current_player)
 	end
 end
 
+
 def set_game(yes_or_no)
 	board = ['1','2','3','4','5','6','7','8','9']
+	player one 
 end
+
+def test_for_full_board(board)
+    if board.all? {|space| space.include?("x") || space.include?("o")}
+        board_full = true
+    else
+        board_full = false
+    end
+end
+ 
+ 

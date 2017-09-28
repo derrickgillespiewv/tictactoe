@@ -45,6 +45,16 @@ class TestTicTac < Minitest::Test
 		assert_equal('o', change_player('x'))
 	end
 
+	def  test_full_board
+        board = ['x', 'o', 'x', 'o', 'x', 'o', 'x', 'o', 'x']
+        assert_equal(true, test_for_full_board(board))
+    end
+
+    def  test_not_full_board
+        board = ['1', '2', 'x', 'o', 'x', 'o', 'x', 'o', 'x']
+        assert_equal(false, test_for_full_board(board))
+    end
+	
 end
 
 
