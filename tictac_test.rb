@@ -55,6 +55,9 @@ class TestTicTac < Minitest::Test
         assert_equal(false, test_for_full_board(board))
     end
 	
+	def test_board
+		assert_equal(['1','2','3','4','5','6','7','8','9'], (set_board))
+	end
 end
 
 

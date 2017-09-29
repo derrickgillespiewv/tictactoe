@@ -52,6 +52,12 @@ end
 end
 end
 
+def set_board
+	board = ['1','2','3','4','5','6','7','8','9']
+	board
+end
+
+
 
 def test_for_full_board(board)
     if board.all? {|space| space.include?("x") || space.include?("o")}
